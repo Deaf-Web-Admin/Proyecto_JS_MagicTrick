@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(55, 78, 210);
+}
+Main,
+.Intro,
+.Pick,
+.Result {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+Main {
+  display: flex;
+}
+.Intro,
+.Pick,
+.Result,
+.Container1,
+.Container2,
+.Container3,
+.Container4,
+.Container5,
+.Container6 {
+  display: none;
+}
+.Intro {
+  color: white;
+  background-image: url("https://wallpaperaccess.com/full/1773869.jpg");
+  background-size: cover;
+  font-size: xx-large;
+}
+.Pick {
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: white;
+  background-image: url("https://2.bp.blogspot.com/-wrhgfV3fSbg/W-iyEDJoYuI/AAAAAAAAAHg/xkiAu0B0ykUWpnTnN1WNTLkPXw0o-HoUwCLcBGAs/s1600/mago-haciendo-truco-de-magia_0.jpg");
+  background-size: cover;
+  font-size: xx-large;
+  padding: 50px;
+}
+.Result {
+  background-image: url("https://c.tenor.com/cVjnyaYbVbwAAAAC/tenor.gif");
+  background-size: cover;
+  color: white;
+  font-size: xx-large;
+}
+.PrimerTarjeta,
+.SegundaTarjeta,
+.TercerTarjeta,
+.CuartaTarjeta,
+.QuintaTarjeta,
+.SextaTarjeta {
+  display: Flex;
+  height: auto;
+  width: 30px;
+  border: 1px solid black;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.Celdas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  gap: 1px;
+  padding: 1px;
+  margin: 1px;
+  border: 1px solid black;
+  background-color: white;
+  font-weight: 600;
+  font-size: xx-large;
+}
+Button {
+  padding: 20px;
+  font-size: large;
+}
+.Container1,
+.Container2,
+.Container3,
+.Container4,
+.Container5,
+.Container6,
+.Container7 {
+  display: none;
+  flex-direction: row;
+  width: 360px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+@media only screen and (max-width: 375px) {
+  .Intro,
+  .Pick,
+  .Result {
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .Intro {
+    background-image: url("https://image.freepik.com/vector-gratis/espectaculo-magia-fondo_1284-13012.jpg");
+    background-position: center;
+    color: black;
+    H1 {
+      color: black;
+    }
+    .Contador {
+      color: white;
+    }
+  }
+  .Pick {
+    background-image: url("https://www.inmsol.com/wp-content/uploads/2016/11/magia1.jpg");
+    background-position: center;
+  }
+  button {
+    padding: 15px;
+    font-size: small;
+  }
+  .Container1,
+  .Container2,
+  .Container3,
+  .Container4,
+  .Container5,
+  .Container6,
+  .Container7 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid white;
+    H4 {
+      width: 100%;
+      text-align: center;
+      font-size: large;
+    }
+  }
+}

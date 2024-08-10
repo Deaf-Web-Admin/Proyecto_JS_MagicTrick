@@ -1,0 +1,91 @@
+<!-- 
+Written By DeafWebDev (linux.user@techie.com)
+
+ ________      _____ ______       ___      ___  ___      ________      ___  ___     
+|\   __  \    |\   _ \  _   \    |\  \    /  /||\  \    |\   ____\    |\  \|\  \    
+\ \  \|\  \   \ \  \\\__\ \  \   \ \  \  /  / /\ \  \   \ \  \___|    \ \  \\\  \   
+ \ \   __  \   \ \  \\|__| \  \   \ \  \/  / /  \ \  \   \ \  \        \ \  \\\  \  
+  \ \  \ \  \   \ \  \    \ \  \   \ \    / /    \ \  \   \ \  \____    \ \  \\\  \ 
+   \ \__\ \__\   \ \__\    \ \__\   \ \__/ /      \ \__\   \ \_______\   \ \_______\
+    \|__|\|__|    \|__|     \|__|    \|__|/        \|__|    \|_______|    \|_______|
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="FavIcon.svg" />
+    <link rel="stylesheet" href="css.css" />
+    <script type="text/javascript" src="js.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magia V1</title>
+  </head>
+  <body onload="iniciarContador()">
+    <main>
+      <div class="Intro" id="Intro">
+        <h1>Bienvenido a mi truco de magia</h1>
+        <h2>
+          Debes <u><i>pensar</i></u> un Numero entre el 0 y el 63
+        </h2>
+        <h1 class="Contador" id="Contador"></h1>
+        <button onclick="mostrarDIV('Pick')">Empezar</button>
+      </div>
+      <div class="Pick" id="Pick">
+        <div class="Container1" id="Container1">
+          <div class="PrimerTarjeta" id="PrimerTarjeta"></div>
+          <h4>Aparece tu numero aqui?</h4>
+          <button onclick="ejecutar('Container2','1')">Si</button
+          ><button onclick="ejecutar('Container2','0')">No</button>
+        </div>
+        <div class="Container2" id="Container2">
+          <div class="SegundaTarjeta" id="SegundaTarjeta"></div>
+          <h4>Aparece tu numero aqui?</h4>
+          <button onclick="ejecutar('Container3','2')">Si</button
+          ><button onclick="ejecutar('Container3','0')">No</button>
+        </div>
+        <div class="Container3" id="Container3">
+          <div class="TercerTarjeta" id="TercerTarjeta"></div>
+          <h4>Aparece tu numero aqui?</h4>
+          <button onclick="ejecutar('Container4','4')">Si</button
+          ><button onclick="ejecutar('Container4','0')">No</button>
+        </div>
+        <div class="Container4" id="Container4">
+          <div class="CuartaTarjeta" id="CuartaTarjeta"></div>
+          <h4>Aparece tu numero aqui?</h4>
+          <button onclick="ejecutar('Container5','8')">Si</button
+          ><button onclick="ejecutar('Container5','0')">No</button>
+        </div>
+        <div class="Container5" id="Container5">
+          <div class="QuintaTarjeta" id="QuintaTarjeta"></div>
+          <h4>Aparece tu numero aqui?</h4>
+          <button onclick="ejecutar('Container6','16')">Si</button
+          ><button onclick="ejecutar('Container6','0')">No</button>
+        </div>
+        <div class="Container6" id="Container6">
+          <div class="SextaTarjeta" id="SextaTarjeta"></div>
+          <h4>Aparece tu numero aqui?</h4>
+          <button onclick="ejecutar('Container7','32')">Si</button
+          ><button onclick="ejecutar('Container7','0')">No</button>
+        </div>
+        <div class="Container7" id="Container7">
+          <button onclick="Responder()">Mostrar el numero que Pense</button>
+        </div>
+      </div>
+      <div class="Result" id="Result">
+        <h1>
+          Tu numero fue el
+          <h1 id="Respuesta"></h1>
+        </h1>
+        <button onclick="iniciarContador()">Adivinar de Nuevo</button>
+      </div>
+    </main>
+  </body>
+</html>
+<!--
+  ____ _____ ____ 
+ |  _ \_   _/ ___|
+ | |_) || || |    
+ |  _ < | || |___ 
+ |_| \_\|_| \____|
+-->
